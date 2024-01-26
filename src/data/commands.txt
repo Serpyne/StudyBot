@@ -1,0 +1,9 @@
+*`/settings add_limit <num>`: The maximum amount of hours that a user can add at a time.
+*`/settings add_cooldown <num>`: The cooldown between each user adding hours.
+*`/settings leaderboard_max_display <num>`: The top however many people to show when using `/leaderboard`.
+*`/log`: Download logs of user activity.
+*`/set <user> <value>`: Sets the users study hours to `<value>`.
+
+`/help <opt. command>`: All commands or find what a command does.
+`/add <value>`: Add study hours to your total hours.
+`/leaderboard`: Ranks the most studious people.

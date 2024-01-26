@@ -1,0 +1,26 @@
+{
+    "\u0007\u0006\t\b\r\n\f\u000b\t\u000e\b\b\b\u000b\u0006\f\u0006\n\r": {
+        "add_cooldown": 0,
+        "study_hours": 7
+    },
+    "\b\u000f\u000f\n\u000e\b\u000e\t\b\r\u000f\t\u000e\u000f\n\u000f\u0007\b": {
+        "add_cooldown": 0,
+        "study_hours": 7
+    },
+    "\n\n\f\u000b\f\u000f\b\u000f\u0007\u000b\u0006\u000b\u0006\r\n\u0007\r\f": {
+        "add_cooldown": 0,
+        "study_hours": 2
+    },
+    "\f\u0007\f\n\u000b\f\u000f\n\u0006\r\t\u000e\u0006\u000b\b\u0007\u0006\r": {
+        "add_cooldown": 0,
+        "study_hours": 14
+    },
+    "\f\f\u0007\n\r\u000b\u000b\f\u000e\u0007\f\t\u000e\u000e\u0006\u000f\u000e\u0006": {
+        "add_cooldown": 0,
+        "study_hours": 8
+    },
+    "\u000e\u0007\u0006\u000f\u000f\r\u0006\u0007\u0006\n\b\u000f\r\r\u0007\u000e\u0006\f": {
+        "add_cooldown": 0,
+        "study_hours": 7
+    }
+}

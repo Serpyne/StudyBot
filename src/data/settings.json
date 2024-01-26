@@ -1,0 +1,12 @@
+{
+  "add_cooldown": 60,
+  "add_limit": 7,
+  "leaderboard_max_display": 10,
+  "backup_interval": 43200,
+  "paths": {
+    "db": "./src/data/db.json",
+    "settings": "./src/data/settings.json",
+    "log": "./src/data/.log",
+    "commands": "./src/data/commands.txt"
+  }
+}
