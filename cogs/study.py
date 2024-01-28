@@ -106,7 +106,7 @@ class StudyCog(commands.Cog):
 
     @commands.slash_command(name="set", description="Set hours.")
     @commands.check(is_creator)
-    async def set_hours(self, ctx, user: discord.Member, value):
+    async def set_command(self, ctx, user: discord.Member, value):
         embed = SpecialEmbed()
         if not value.isdigit():
             embed.title = "Invalid value provided."
@@ -119,8 +119,25 @@ class StudyCog(commands.Cog):
         embed.title = f"Set {user.name} to {value} hours"
         await ctx.respond(embed=embed)
 
-    @set_hours.error
+    @set_command.error
     async def set_error(self, ctx, error):
+        await ctx.respond("You don't have permission to use this command.", ephemeral=True)
+
+    @commands.slash_command(name="get", description="Get hours.")
+    @commands.check(is_creator)
+    async def get_command(self, ctx, user: discord.Member):
+        embed = SpecialEmbed()
+
+        value = self.get_study_hours(user.id)
+        if not value:
+            value = 0
+        log_message(f"[{ctx.author.name}] get {user.name} to {value} hours")
+
+        embed.title = f"{user.name} has {value} hours"
+        await ctx.respond(embed=embed)
+
+    @get_command.error
+    async def get_error(self, ctx, error):
         await ctx.respond("You don't have permission to use this command.", ephemeral=True)
 
 

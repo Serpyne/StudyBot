@@ -31,6 +31,10 @@
         "add_cooldown": 0,
         "study_hours": 0
     },
+    "\r\n\b\u000f\r\b\u0007\f\u0006\u0007\u000b\u000e\r\b\u000e\b\u000e\t": {
+        "add_cooldown": 0,
+        "study_hours": 8
+    },
     "\r\f\u000e\t\u000b\f\f\t\r\t\b\u0006\u0006\u0007\u000f\u000f\r\u000e": {
         "add_cooldown": 0,
         "study_hours": 5

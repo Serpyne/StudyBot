@@ -5,6 +5,7 @@ import asyncio
 import discord
 from discord.ext import tasks, commands
 from functions.get_settings import get_settings
+from functions.delete_message import delete_message_in_channel
 
 
 class StudyBot(commands.Bot):
