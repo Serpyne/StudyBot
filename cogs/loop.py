@@ -25,7 +25,8 @@ class LoopCog(commands.Cog):
 
     def backup_db(self):
         db = json.load(open(get_path("db"), "r"))
-        filename = f"backup{len(os.listdir("./backups")) + 1}.json"
+        num = len(os.listdir("./backups")) + 1
+        filename = f'backup{num}.json'
         with open("./backups/" + filename, "w") as f:
             json.dump(db, f, indent=4, sort_keys=True)
 
