@@ -11,7 +11,7 @@ def format_seconds(seconds, verbose=False):
     if not verbose:
         for i, v in enumerate((days, hours, minutes, seconds)):
             if v > 0:
-                return_string += f"{v}{"dhms"[i]} "
+                return_string += f'{v}{"dhms"[i]} '
 
     else:
         for i, v in enumerate((days, hours, minutes, seconds)):
