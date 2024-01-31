@@ -16,6 +16,6 @@ def format_seconds(seconds, verbose=False):
     else:
         for i, v in enumerate((days, hours, minutes, seconds)):
             if v > 0:
-                return_string += f"{v} {
-                    ("days hours minutes seconds".split())[i]} "
+                return_string += f"{v} "
+                return_string += ("days hours minutes seconds".split())[i]
     return return_string
